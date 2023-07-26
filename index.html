@@ -24,8 +24,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
                 'bg-primary-color': '#F85559',
+                'primary-text-color': '#121212',
               }
             }
           }
@@ -154,7 +154,7 @@
       </section>
 
       <!-- Gallery Section -->
-      <section class="">
+      <section>
         <div class="hidden md:flex justify-evenly text-center bg-white py-6 lg:py-12 px-6 lg:px-16 mx-16 lg:mx-28 -mt-24 lg:-mt-32 drop-shadow-xl rounded-lg relative z-20 mb-24">
           <div>
             <img src="images/fruit1.png" alt="">
@@ -162,11 +162,11 @@
           </div>
           <div>
             <img src="images/fruit2.png" alt="">
-            <p class="pt-3">Strawberry</p>
+            <p class="pt-3">Orange</p>
           </div>
           <div>
             <img src="images/fruit3.png" alt="">
-            <p class="pt-3">Strawberry</p>
+            <p class="pt-3">Mango</p>
           </div>
           <div>
             <img src="images/fruit4.png" alt="">
@@ -174,13 +174,310 @@
           </div>
           <div>
             <img src="images/fruit5.png" alt="">
-            <p class="pt-3">Strawberry</p>
+            <p class="pt-3">Mango</p>
           </div>
         </div>
       </section>
     </header>
-    <main>
-      
+    <main class="container lg:mx-auto pt-6 lg:pt-20">
+
+      <!-- Hot Deal Section -->
+      <section class="mx-6 lg:mx-auto">
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
+          <div class="flex-1 text-center lg:text-start">
+            <h3 class="text-xl md:text-5xl font-extrabold mb-6 text-primary-text-color">Deal of the day</h3>
+            <p class="text-sm md:text-base text-primary-text-color lg:w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div>
+            <div class="grid grid-flow-col gap-4 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-lato text-3xl md:text-5xl font-extrabold">
+                  <span style="--value:15;"></span> :
+                </span>
+                days
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-lato text-3xl md:text-5xl font-extrabold">
+                  <span style="--value:10;"></span> :
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-lato text-3xl md:text-5xl font-extrabold">
+                  <span style="--value:24;"></span> :
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-lato text-3xl md:text-5xl font-extrabold">
+                  <span style="--value:2;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Section -->
+      <section class="mt-12 mx-6 lg:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card no 1 -->
+          <div class="card bg-base-100 border-[1px]">
+            <figure class="px-10 pt-10">
+              <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold text-primary-text-color">12.90$ - 18.85$</h2>
+              <div class="divider m-0"></div>
+              <p class="pb-3">Apples</p>
+              <div class="rating rating-lg rating-half pb-6">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="card-actions justify-center">
+                <button class="text-bg-primary-color text-lg font-bold" onclick="my_modal_1.showModal()">Details</button>
+                <!-- Button Action -->
+                <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <img class="inline" src="images/fruit6.png" alt="">
+                <h3 class="font-extrabold text-4xl py-6">Apples</h3>
+                <p class="pb-8">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating rating-lg rating-half pb-10">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="modal-action justify-center">
+                <button class="btn bg-transparent text-bg-primary-color border-2 border-bg-primary-color hover:bg-bg-primary-color hover:text-white">Close</button>
+                <button class="btn bg-bg-primary-color text-white hover:bg-transparent hover:border-2 hover:border-bg-primary-color hover:text-bg-primary-color">Buy Now</button>
+                </div>
+                </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- Card no 2 -->
+          <div class="card bg-base-100 border-[1px]">
+            <figure class="px-10 pt-10">
+              <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold text-primary-text-color">12.90$ - 18.85$</h2>
+              <div class="divider m-0"></div>
+              <p class="pb-3">Orange</p>
+              <div class="rating rating-lg rating-half pb-6">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="card-actions justify-center">
+                <button class="text-bg-primary-color text-lg font-bold" onclick="my_modal_2.showModal()">Details</button>
+                <!-- Button Action -->
+                <dialog id="my_modal_2" class="modal">
+                <form method="dialog" class="modal-box">
+                  <img class="inline" src="images/fruit7.png" alt="">
+                <h3 class="font-extrabold text-4xl py-6">Orange</h3>
+                <p class="pb-8">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating rating-lg rating-half pb-10">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="modal-action justify-center">
+                <button class="btn bg-transparent text-bg-primary-color border-2 border-bg-primary-color hover:bg-bg-primary-color hover:text-white">Close</button>
+                <button class="btn bg-bg-primary-color text-white hover:bg-transparent hover:border-2 hover:border-bg-primary-color hover:text-bg-primary-color">Buy Now</button>
+                </div>
+                </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- Card no 3 -->
+          <div class="card bg-base-100 border-[1px]">
+            <figure class="px-10 pt-10">
+              <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold text-primary-text-color">12.90$ - 18.85$</h2>
+              <div class="divider m-0"></div>
+              <p class="pb-3">Red Dragon</p>
+              <div class="rating rating-lg rating-half pb-6">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="card-actions justify-center">
+                <button class="text-bg-primary-color text-lg font-bold" onclick="my_modal_3.showModal()">Details</button>
+                <!-- Button Action -->
+                <dialog id="my_modal_3" class="modal">
+                <form method="dialog" class="modal-box">
+                  <img class="inline" src="images/fruit8.png" alt="">
+                <h3 class="font-extrabold text-4xl py-6">Red Dragon</h3>
+                <p class="pb-8">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating rating-lg rating-half pb-10">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="modal-action justify-center">
+                <button class="btn bg-transparent text-bg-primary-color border-2 border-bg-primary-color hover:bg-bg-primary-color hover:text-white">Close</button>
+                <button class="btn bg-bg-primary-color text-white hover:bg-transparent hover:border-2 hover:border-bg-primary-color hover:text-bg-primary-color">Buy Now</button>
+                </div>
+                </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- Card no 4 -->
+          <div class="card bg-base-100 border-[1px]">
+            <figure class="px-10 pt-10">
+              <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold text-primary-text-color">12.90$ - 18.85$</h2>
+              <div class="divider m-0"></div>
+              <p class="pb-3">Banana</p>
+              <div class="rating rating-lg rating-half pb-6">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="card-actions justify-center">
+                <button class="text-bg-primary-color text-lg font-bold" onclick="my_modal_4.showModal()">Details</button>
+                <!-- Button Action -->
+                <dialog id="my_modal_4" class="modal">
+                <form method="dialog" class="modal-box">
+                  <img class="inline" src="images/fruit9.png" alt="">
+                <h3 class="font-extrabold text-4xl py-6">Banana</h3>
+                <p class="pb-8">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating rating-lg rating-half pb-10">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-bg-primary-color mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="modal-action justify-center">
+                <button class="btn bg-transparent text-bg-primary-color border-2 border-bg-primary-color hover:bg-bg-primary-color hover:text-white">Close</button>
+                <button class="btn bg-bg-primary-color text-white hover:bg-transparent hover:border-2 hover:border-bg-primary-color hover:text-bg-primary-color">Buy Now</button>
+                </div>
+                </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop All Button -->
+        <div class="flex justify-center pt-10 lg:pt-12">
+          <button class="bg-bg-primary-color text-white py-2 px-3 md:py-3 md:px-7 text-sm font-bold md:text-xl md:font-extrabold rounded-lg hover:bg-transparent hover:border-2 hover:border-bg-primary-color hover:text-bg-primary-color">Shop All</button>
+        </div>
+      </section>
+
+      <!-- Hero Section -->
+      <section class="mt-12 mx-6 lg:mx-auto">
+        <div class="hero h-100% rounded-lg" style="background-image: url(images/team.png);">
+          <div class="hero-overlay h-full rounded-lg bg-black bg-opacity-70"></div>
+          <div>
+            <div class="hero-content text-center text-neutral-content">
+              <div>
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="images/member1.png" alt="">
+              <h3>Awlad Hossain</h3>
+              <p>Fruits Expert</p>
+              <div>
+                <div><i class="fa-brands fa-square-facebook" style="color: #F85559;"></i></div>
+                <div><i class="fa-brands fa-square-twitter" style="color: #F85559;"></i></div>
+                <div><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="h-80 bg-cover bg-no-repeat" style="background-image: url(images/team.png);">
+        <div class="bg-black bg-opacity-70 h-full">
+          <div>
+            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          </div>
+        </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
 </body>
