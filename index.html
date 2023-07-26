@@ -43,7 +43,7 @@
     <header class="container mx-auto">
 
       <!-- Nav Bar Section -->
-        <nav class="md:bg-bg-primary-color py-2 px-2 md:px-9 rounded-[600px] my-3 md:my-12">
+        <nav class="md:bg-bg-primary-color py-2 px-2 md:px-9 rounded-full my-3 md:my-12">
             <div class="navbar">
               <!-- Nav Start -->
                 <div class="navbar-start">
@@ -96,35 +96,85 @@
         </nav>
 
       <!-- Carousel Section -->
-      <section>
-        <div class="carousel mx-4 lg:mx-auto">
+      <section class="z-0">
+        <div class="carousel mx-4 lg:mx-auto rounded-lg">
+          <!-- Slider 1 -->
           <div id="slide1" class="carousel-item relative w-full">
             <img src="images/banner1.png" class="w-full" />
+            <div class="absolute text-center mx-auto left-0 right-0 bg-gradient-to-b from-black to-transparent">
+              <h3 class="text-xl md:max-lg:text-4xl lg:text-7xl font-extrabold text-white pt-3 md:max-lg:pt-10 lg:pt-20 pb-1 lg:pb-4">Exotic tastes at your <br>doorstep</h3>
+              <p class="text-sm lg:text-xl font-medium text-white pb-2 lg:pb-6">We supply highly quality organic products</p>
+              <button class="bg-bg-primary-color text-white py-2 px-3 lg:py-3 lg:px-7 text-sm font-bold lg:text-xl lg:font-extrabold rounded-lg">Shop Now</button>
+            </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" class="btn btn-circle text-white bg-black border-none hover:text-black">❮</a> 
               <a href="#slide2" class="btn btn-circle text-white bg-black border-none hover:text-black">❯</a>
             </div>
           </div> 
+          <!-- Slider 2 -->
           <div id="slide2" class="carousel-item relative w-full">
             <img src="images/banner2.png" class="w-full" />
+            <div class="absolute text-center mx-auto left-0 right-0 bg-gradient-to-b from-black to-transparent">
+              <h3 class="text-xl md:max-lg:text-4xl lg:text-7xl font-extrabold text-white pt-3 md:max-lg:pt-10 lg:pt-20 pb-1 lg:pb-4">Exotic tastes at your <br>doorstep</h3>
+              <p class="text-sm lg:text-xl font-medium text-white pb-2 lg:pb-6">We supply highly quality organic products</p>
+              <button class="bg-bg-primary-color text-white py-2 px-3 lg:py-3 lg:px-7 text-sm font-bold lg:text-xl lg:font-extrabold rounded-lg">Shop Now</button>
+            </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle text-white bg-black border-none hover:text-black">❮</a> 
               <a href="#slide3" class="btn btn-circle text-white bg-black border-none hover:text-black">❯</a>
             </div>
           </div> 
+          <!-- Slider 3 -->
           <div id="slide3" class="carousel-item relative w-full">
             <img src="images/banner3.png" class="w-full" />
+            <div class="absolute text-center mx-auto left-0 right-0 bg-gradient-to-b from-black to-transparent">
+              <h3 class="text-xl md:max-lg:text-4xl lg:text-7xl font-extrabold text-white pt-3 md:max-lg:pt-10 lg:pt-20 pb-1 lg:pb-4">Exotic tastes at your <br>doorstep</h3>
+              <p class="text-sm lg:text-xl font-medium text-white pb-2 lg:pb-6">We supply highly quality organic products</p>
+              <button class="bg-bg-primary-color text-white py-2 px-3 lg:py-3 lg:px-7 text-sm font-bold lg:text-xl lg:font-extrabold rounded-lg">Shop Now</button>
+            </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" class="btn btn-circle text-white bg-black border-none hover:text-black">❮</a> 
               <a href="#slide4" class="btn btn-circle text-white bg-black border-none hover:text-black">❯</a>
             </div>
           </div> 
+          <!-- Slider 4 -->
           <div id="slide4" class="carousel-item relative w-full">
             <img src="images/banner4.png" class="w-full" />
+            <div class="absolute text-center mx-auto left-0 right-0 bg-gradient-to-b from-black to-transparent">
+              <h3 class="text-xl md:max-lg:text-4xl lg:text-7xl font-extrabold text-white pt-3 md:max-lg:pt-10 lg:pt-20 pb-1 lg:pb-4">Exotic tastes at your <br>doorstep</h3>
+              <p class="text-sm lg:text-xl font-medium text-white pb-2 lg:pb-6">We supply highly quality organic products</p>
+              <button class="bg-bg-primary-color text-white py-2 px-3 lg:py-3 lg:px-7 text-sm font-bold lg:text-xl lg:font-extrabold rounded-lg">Shop Now</button>
+            </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" class="btn btn-circle text-white bg-black border-none hover:text-black">❮</a> 
               <a href="#slide1" class="btn btn-circle text-white bg-black border-none hover:text-black">❯</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="">
+        <div class="hidden md:flex justify-evenly text-center bg-white py-6 lg:py-12 px-6 lg:px-16 mx-16 lg:mx-28 -mt-24 lg:-mt-32 drop-shadow-xl rounded-lg relative z-20 mb-24">
+          <div>
+            <img src="images/fruit1.png" alt="">
+            <p class="pt-3">Strawberry</p>
+          </div>
+          <div>
+            <img src="images/fruit2.png" alt="">
+            <p class="pt-3">Strawberry</p>
+          </div>
+          <div>
+            <img src="images/fruit3.png" alt="">
+            <p class="pt-3">Strawberry</p>
+          </div>
+          <div>
+            <img src="images/fruit4.png" alt="">
+            <p class="pt-3">Strawberry</p>
+          </div>
+          <div>
+            <img src="images/fruit5.png" alt="">
+            <p class="pt-3">Strawberry</p>
           </div>
         </div>
       </section>
