@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
+    <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- Fontawesome Installation -->
+    <script src="https://kit.fontawesome.com/07bb178399.js" crossorigin="anonymous"></script>
 
     <!-- Google Font Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +25,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'bg-primary-color': '#F85559',
               }
             }
           }
@@ -35,8 +40,98 @@
     </style>
 </head>
 <body class="font-lato">
-    <header></header>
-    <main></main>
+    <header class="container mx-auto">
+
+      <!-- Nav Bar Section -->
+        <nav class="md:bg-bg-primary-color py-2 px-2 md:px-9 rounded-[600px] my-3 md:my-12">
+            <div class="navbar">
+              <!-- Nav Start -->
+                <div class="navbar-start">
+                  <div class="flex gap-3 items-center lg:hidden">
+                    <img class="w-9" src="images/logo.png" alt="">
+                    <a class="text-xl font-bold md:text-white">Fruit Burst</a>
+                  </div>
+                  <ul class="menu menu-horizontal px-1 hidden lg:flex text-white text-lg font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </div>
+              <!-- Nav Center -->
+                <div class="navbar-center hidden lg:flex">
+                  <div class="flex items-center gap-3">
+                    <div><img class="w-12" src="images/logo.png" alt=""></div>
+                    <div><a class="text-4xl text-white font-bold">Fruit Burst</a></div>
+                  </div>
+                </div>
+              <!-- Nav End -->
+                <div class="navbar-end">
+                  <form class="bg-white rounded-full md:w-auto hidden md:flex py-3 px-7">
+                    <input class="rounded-full" type="text" placeholder="Search here" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden pr-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                      
+                    </label>
+                    <div class="flex flex-col dropdown-content shadow bg-base-100 rounded-2xl pb-2 right-0">
+                      <div>
+                        <ul tabindex="0" class="menu menu-sm mt-3 z-[1] p-2 rounded-box w-52">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <input tabindex="0" type="text" placeholder="Search" class="rounded-full menu menu-sm z-[1] input input-bordered w-48 mx-auto md:w-auto md:hidden" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </nav>
+
+      <!-- Carousel Section -->
+      <section>
+        <div class="carousel mx-4 lg:mx-auto">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle text-white bg-black border-none hover:text-black">❮</a> 
+              <a href="#slide2" class="btn btn-circle text-white bg-black border-none hover:text-black">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle text-white bg-black border-none hover:text-black">❮</a> 
+              <a href="#slide3" class="btn btn-circle text-white bg-black border-none hover:text-black">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle text-white bg-black border-none hover:text-black">❮</a> 
+              <a href="#slide4" class="btn btn-circle text-white bg-black border-none hover:text-black">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle text-white bg-black border-none hover:text-black">❮</a> 
+              <a href="#slide1" class="btn btn-circle text-white bg-black border-none hover:text-black">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      
+    </main>
     <footer></footer>
 </body>
 </html>
